@@ -33,7 +33,7 @@ export const ArrayDemo4 = () => {
   ];
   return (
     <div style={{ textAlign: "center" }}>
-      <h1>Array Demo 3</h1>
+      <h1>Array Demo 4</h1>
       <table class="table table-dark">
         <thead>
           <tr>
