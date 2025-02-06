@@ -1,0 +1,41 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.app-container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh; /* Full height of the viewport */
+}
+
+.header {
+    height: auto; /* Set your desired height */
+    background-color: chocolate; /* Header background color */
+    color: white; /* Header text color */
+    display: flex;
+    align-items: center; /* Center vertically */
+    justify-content: space-between; /* Space between left and right */
+    padding: 20px; /* Add padding */
+}
+
+.footer {
+    height: 60px; /* Set your desired height */
+    background-color: black; /* Footer background color */
+    color: white; /* Footer text color */
+    display: flex;
+    align-items: center; /* Center vertically */
+    justify-content: center; /* Center horizontally */
+}
+
+.content {
+    flex: 1; /* This will allow the content to fill the remaining space */
+    display: flex;
+    flex-direction: row; /* Align content in a row */
+    justify-content: space-between; /* Space between left and right */
+    padding: 20px; /* Add padding */
+    background-color: orange; /* Content background color */
+    color: white; /* Content text color */
+    text-align: center; /* Center text */
+}

@@ -1,0 +1,25 @@
+.content {
+    height: 200%; /* Adjust height to account for header and footer */
+    width: 100%; /* Keep as 100% */
+    background-color: chocolate; /* Keep background */
+    color: white; /* Keep text color */
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-between; /* Space between left and right */
+    padding: 20px; /* Add padding */
+}
+
+.image-container img {
+    height: 200px; /* Set desired height */
+    width: auto; /* Maintain aspect ratio */
+    border-radius: 10px; /* Set border radius */
+    margin-left: 20px;
+    margin-right: 30px; /* Add margin to separate from text */
+}
+
+.about-us {
+    flex: 1; /* Allow this section to take available space */
+}
+
+.user-info {
+    flex: 1; /* Allow this section to take available space */
+}

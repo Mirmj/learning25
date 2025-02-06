@@ -1,0 +1,43 @@
+.heder {
+    position: relative; /* Keep as relative */
+    top: 0px;
+    text-align: center;
+    background-color: chocolate;
+    width: 100%;
+    height: auto; /* Keep as auto */
+    font-weight: bold; /* Keep bold text */
+    padding: 20px 0; /* Keep padding */
+    margin-bottom: 20px; /* Add margin to separate from content */
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-between; /* Space between left and right */
+}
+
+.nav-left {
+    flex: 1; /* Allow left nav to take available space */
+    text-align: left; /* Align text to the left */
+}
+
+.nav-right {
+    flex: 1; /* Allow right nav to take available space */
+    text-align: right; /* Align text to the right */
+}
+
+.nav-right ul {
+    list-style-type: none; /* Remove bullet points */
+    padding: 0; /* Remove padding */
+}
+
+.nav-right li {
+    display: inline; /* Display items inline */
+    margin: 0 15px; /* Add margin between items */
+}
+
+@media (max-width: 768px) {
+    .heder {
+        padding: 10px 0; /* Adjust padding for smaller screens */
+        flex-direction: column; /* Stack items vertically */
+    }
+    .nav-left, .nav-right {
+        text-align: center; /* Center text on smaller screens */
+    }
+}

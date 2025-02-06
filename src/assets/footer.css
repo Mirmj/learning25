@@ -1,0 +1,20 @@
+.footer {
+    margin-bottom: 0;
+    background-color: black;
+    width: 100%;
+    height: 60px; /* Keep as auto */
+    color: white;
+    text-align: center;
+    justify-content: center;
+    /* Keep as relative */
+    position: fixed;
+    bottom: 0px;
+    font-weight: bold; /* Keep bold text */
+     /* Keep padding */
+    margin-top: 10px; /* Add margin to separate from content */
+}
+@media (max-width: 768px) {
+    .footer {
+        padding: 10px 0; /* Adjust padding for smaller screens */
+    }
+} 
