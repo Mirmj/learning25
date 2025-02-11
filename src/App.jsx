@@ -16,6 +16,13 @@ import { UseStateDemo1 } from './components/UseStateDemo1'
 import { ArrayDemo7 } from './components/ArrayDemo7'
 import { UseStateDemo2 } from './components/UseStateDemo2'
 import { InputDemo1 } from './components/InputDemo1'
+import { Navbar } from './components/Navbar'
+import { Route, Routes } from 'react-router-dom'
+import { HotstarHome } from './components/hotstar/HotstarHome'
+import { HotstarMovies } from './components/hotstar/HotstarMovies'
+import { HotstarWelcome } from './components/hotstar/HotstarWelcome'
+import { HotstarError } from './components/hotstar/HotstarError'
+
 
 
 function App() {
@@ -40,7 +47,18 @@ function App() {
           {/* <UseStateDemo1></UseStateDemo1> */}
           {/* <UseStateDemo1></UseStateDemo1> */}
           {/* <UseStateDemo2></UseStateDemo2> */}
-          <InputDemo1/>
+          {/* <InputDemo1/> */}
+
+          <Navbar></Navbar>
+          <Routes>
+              <Route path='/' element= {<HotstarWelcome/>}></Route>
+              <Route path='/home' element= {<HotstarHome/>}></Route>
+              <Route path='/movies' element= {<HotstarMovies/>}></Route>
+              <Route path='/*' element= {<HotstarError/>}></Route>
+              
+              
+              
+              </Routes>
       </div>
     </>
   )
